@@ -20,7 +20,7 @@ for fire_data_18 in all_fire_data_18:
     date_18 = fire_data_18['acq_date']
     lat_18 = fire_data_18['latitude']
     lon_18 = fire_data_18['longitude']
-    if (-115 >= lon_18 >= -120) and (46 >= lat_18 >= 42):
+    if (-120 >= lon_18 >= -125) and (47 >= lat_18 >= 42):
         # get elevations and filter for optimal fungus growth
         try:
             elevation_18 = get_elevation(lat_18,lon_18)
@@ -70,7 +70,7 @@ for fire_data_18 in all_fire_data_18:
     date_18 = fire_data_18['acq_date']
     lat_18 = fire_data_18['latitude']
     lon_18 = fire_data_18['longitude']
-    if (-115 >= lon_18 >= -120) and (46 >= lat_18 >= 42):
+    if (-120 >= lon_18 >= -125) and (47 >= lat_18 >= 42):
         # get elevations and filter for optimal fungus growth
         try:
             elevation_18 = get_elevation(lat_18,lon_18)
@@ -124,7 +124,7 @@ for fire_data_19 in all_fire_data_19:
     date_19 = fire_data_19['acq_date']
     lat_19 = fire_data_19['latitude']
     lon_19 = fire_data_19['longitude']
-    if (-115 >= lon_19 >= -120) and (46 >= lat_19 >= 42):
+    if (-120 >= lon_19 >= -125) and (47 >= lat_19 >= 42):
         # get elevations and filter for optimal fungus growth
         try:
             elevation_19 = get_elevation(lat_19,lon_19)
@@ -174,7 +174,7 @@ for fire_data_19 in all_fire_data_19:
     date_19 = fire_data_19['acq_date']
     lat_19 = fire_data_19['latitude']
     lon_19 = fire_data_19['longitude']
-    if (-115 >= lon_19 >= -120) and (46 >= lat_19 >= 42):
+    if (-120 >= lon_19 >= -125) and (47 >= lat_19 >= 42):
         # get elevations and filter for optimal fungus growth
         try:
             elevation_19 = get_elevation(lat_19,lon_19)
