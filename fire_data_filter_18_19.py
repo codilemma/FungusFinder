@@ -10,6 +10,7 @@ from pandas import DataFrame
 
 # Extract fire data from json file
 fire_data_18_filename = '/home/code/WS/FungusFinderFireData/usa_fires_2018_archive_V1_90792.json'
+
 with open(fire_data_18_filename) as f:
     all_fire_data_18 = json.load(f)
 
@@ -30,6 +31,7 @@ for fire_data_18 in all_fire_data_18:
         dates_18.append(date_18)
         lats_18.append(lat_18)
         lons_18.append(lon_18)
+        elevations_18.append(elevation_18)
 
         label_18 = f"Date: {date_18}\
             <br />Lat: {lat_18}\
@@ -42,6 +44,7 @@ df_fires_18_V1 = pd.DataFrame(
     {'date':dates_18,
      'lat':lats_18,
      'lon':lons_18,
+     'elevation':elevations_18,
      'label':labels_18
     }
 )
@@ -80,6 +83,7 @@ for fire_data_18 in all_fire_data_18:
         dates_18.append(date_18)
         lats_18.append(lat_18)
         lons_18.append(lon_18)
+        elevations_18.append(elevation_18)
 
         label_18 = f"Date: {date_18}\
             <br />Lat: {lat_18}\
@@ -92,6 +96,7 @@ df_fires_18_M6 = pd.DataFrame(
     {'date':dates_18,
      'lat':lats_18,
      'lon':lons_18,
+     'elevation':elevations_18,
      'label':labels_18
     }
 )
@@ -134,6 +139,7 @@ for fire_data_19 in all_fire_data_19:
         dates_19.append(date_19)
         lats_19.append(lat_19)
         lons_19.append(lon_19)
+        elevations_19.append(elevation_19)
 
         label_19 = f"Date: {date_19}\
             <br />Lat: {lat_19}\
@@ -146,6 +152,7 @@ df_fires_19_V1 = pd.DataFrame(
     {'date':dates_19,
      'lat':lats_19,
      'lon':lons_19,
+     'elevation':elevations_19,
      'label':labels_19
     }
 )
@@ -184,6 +191,7 @@ for fire_data_19 in all_fire_data_19:
         dates_19.append(date_19)
         lats_19.append(lat_19)
         lons_19.append(lon_19)
+        elevations_19.append(elevation_19)
 
         label_19 = f"Date: {date_19}\
             <br />Lat: {lat_19}\
@@ -196,6 +204,7 @@ df_fires_19_M6 = pd.DataFrame(
     {'date':dates_19,
      'lat':lats_19,
      'lon':lons_19,
+     'elevation':elevations_19,
      'label':labels_19
     }
 )
